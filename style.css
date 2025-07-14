@@ -1,0 +1,200 @@
+/* === Base Styling === */
+:root {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --accent-color: #22d3ee;
+  --pink-color: #f472b6;
+  --card-color: #1e293b;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+/* === Navbar === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-color);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+nav h1 {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--pink-color);
+}
+
+#mode-toggle {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* === Section Headings === */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--accent-color);
+  padding-left: 10px;
+}
+
+/* === Hero Section === */
+#hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+}
+
+/* === Card Section === */
+.card {
+  background-color: var(--card-color);
+  border-left: 4px solid var(--accent-color);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 255, 255, 0.3);
+}
+
+/* === Contact Icons === */
+.socials a {
+  margin-right: 20px;
+  font-size: 1.6rem;
+  color: var(--accent-color);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.socials a:hover {
+  color: var(--pink-color);
+  transform: scale(1.2);
+}
+body.light-mode {
+  --bg-color: #f8fafc;
+  --text-color: #1e293b;
+  --card-color: #ffffff;
+}
+
+/* === Skills Section === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background-color: var(--card-color);
+  padding: 1rem;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 255, 255, 0.3);
+}
+/* === Section List Styles === */
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--card-color);
+  border-left: 4px solid var(--pink-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.list li:hover {
+  transform: translateX(5px);
+}
+/* === Section List Styles === */
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--card-color);
+  border-left: 4px solid var(--pink-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.list li:hover {
+  transform: translateX(5px);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
